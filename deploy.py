@@ -52,7 +52,7 @@ st.markdown(
         padding: 2rem;
     }
     .stSidebar {
-        background-color: #343a40;
+        background-color: #f8f9fa;
         color: white;
     }
     .st-expander {
