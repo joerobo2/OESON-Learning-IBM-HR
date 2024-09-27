@@ -65,7 +65,7 @@ st.markdown(
         font-weight: bold;
     }
     .stButton button {
-        background-color: #007bff;
+        background-color: #15677B;
         color: white;
         font-size: 1rem;
         border-radius: 0.3rem;
