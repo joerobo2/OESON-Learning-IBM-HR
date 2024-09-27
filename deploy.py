@@ -56,7 +56,7 @@ st.markdown(
         color: black;
     }
     .st-expander {
-        background-color: #dee2e6;
+        background-color: #15677B;
         border-radius: 0.5rem;
         padding: 1rem;
     }
