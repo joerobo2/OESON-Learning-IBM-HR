@@ -52,11 +52,11 @@ st.markdown(
         padding: 2rem;
     }
     .stSidebar {
-        background-color: #BEC0C3;
-        color: black;
+        background-color: #343a40;
+        color: white;
     }
     .st-expander {
-        background-color: #15677B;
+        background-color: #dee2e6;
         border-radius: 0.5rem;
         padding: 1rem;
     }
@@ -65,7 +65,7 @@ st.markdown(
         font-weight: bold;
     }
     .stButton button {
-        background-color: #15677B;
+        background-color: #007bff;
         color: white;
         font-size: 1rem;
         border-radius: 0.3rem;
@@ -105,10 +105,9 @@ with tab1:
     st.write(df.head())
 
     st.write("### Select the preprocessing steps:")
-    apply_label_encoding = st.checkbox('Apply Label Encoding')
     apply_quantile_transform = st.checkbox('Apply Quantile Transformation')
 
-    df, encoders = preprocess_data(df, apply_label_encoding, apply_quantile_transform)
+    df, encoders = preprocess_data(df, apply_label_encoding=True, apply_quantile_transform=apply_quantile_transform)
 
 # Split the dataset into training and testing sets
 X = df.drop(columns=['Attrition', 'EmployeeNumber', 'EmployeeCount', 'Over18', 'StandardHours'])
